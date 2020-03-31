@@ -162,7 +162,7 @@ module Faraday
     # Returns an object that responds to `call` and returns a Response.
     def app
       @app ||= begin
-        lock!
+        # lock!
         to_app
       end
     end
